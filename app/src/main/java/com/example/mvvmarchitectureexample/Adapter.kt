@@ -19,8 +19,6 @@ class Adapter(val list: List<String>) : RecyclerView.Adapter<Adapter.ViewHolder>
         holder.bind(list.get(position))
     }
 
-
-
     override fun getItemCount(): Int {
         return list.size
     }

@@ -19,8 +19,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         context = this@MainActivity
+
         mainActivityViewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
+
+        // Get Weather
         getWeather("Passaic")
     }
 
