@@ -23,6 +23,7 @@ class Adapter(val list: List<String>) : RecyclerView.Adapter<Adapter.ViewHolder>
         return list.size
     }
 
+    // View Holder Class
     inner class ViewHolder(itemView: ItemRowBinding) : RecyclerView.ViewHolder(itemView.root) {
         fun bind(item: String) {
             binding.apply {
